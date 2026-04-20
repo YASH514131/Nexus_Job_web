@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXUS Talent Radar — Smart Job Scanner</title>
+    <meta
+      name="description"
+      content="NEXUS Talent Radar detects open job positions automatically, scanning career pages and delivering structured role data in seconds."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="mark">NEXUS</span>
+          <span class="subtitle">Talent Radar</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#workflow">How it works</a>
+          <a href="#preview">Live preview</a>
+          <a href="#download">Download</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section fade-in" id="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">Automated scanning • real-time insights</span>
+            <h1>Find Every Open Job Position — Automatically</h1>
+            <p>
+              Upload company lists. NEXUS scans career pages, extracts roles, and
+              delivers structured internship data in seconds.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#download">Download</a>
+            </div>
+            <div class="hero-badges">
+              <div class="badge">
+                <span>Fast indexing</span>
+                <strong>Up to 200 career pages / min</strong>
+              </div>
+              <div class="badge">
+                <span>Active users</span>
+                <strong>2,340+ job seekers</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="phone-tabs">
+                  <button class="phone-tab active" data-tab="setup">Setup</button>
+                  <button class="phone-tab" data-tab="scan">Scan</button>
+                  <button class="phone-tab" data-tab="results">Results</button>
+                </div>
+                <div class="phone-content">
+                  <div class="phone-image active" id="setup">
+                    <img src="images/homepage.jpeg" alt="NEXUS Setup screen" />
+                  </div>
+                  <div class="phone-image" id="scan">
+                    <img src="images/scan_page.jpeg" alt="NEXUS Scan screen" />
+                  </div>
+                  <div class="phone-image" id="results">
+                    <img src="images/Result_page.jpeg" alt="NEXUS Results screen" />
+                  </div>
+                </div>
+              </div>
+              <div class="phone-home"></div>
+            </div>
+
+            <div class="floating-orbit orbit-a"></div>
+            <div class="floating-orbit orbit-b"></div>
+          </div>
+        </section>
+
+        <section class="section stats-grid fade-in" id="stats">
+          <div class="section-heading">
+            <span class="eyebrow">Real-time metrics</span>
+            <h2>Scan Results at a Glance</h2>
+          </div>
+          <div class="grid-metrics">
+            <div class="stat-card-large">
+              <div class="stat-accent accent-purple"></div>
+              <div class="stat-number"><span class="metric-counter" data-target="255">255</span></div>
+              <div class="stat-label">Companies Scanned</div>
+            </div>
+            <div class="stat-card-large">
+              <div class="stat-accent accent-blue"></div>
+              <div class="stat-number"><span class="metric-counter" data-target="1616">1,616</span></div>
+              <div class="stat-label">Internships Found</div>
+            </div>
+            <div class="stat-card-large">
+              <div class="stat-accent accent-orange"></div>
+              <div class="stat-number"><span class="metric-counter metric-decreasing" data-target="20">20</span></div>
+              <div class="stat-label">Processing Errors</div>
+            </div>
+            <div class="stat-card-large">
+              <div class="stat-accent accent-cyan"></div>
+              <div class="stat-number"><span class="metric-counter" data-target="1066">1,066</span></div>
+              <div class="stat-label">New Listings</div>
+            </div>
+            <div class="stat-card-large">
+              <div class="stat-accent accent-slate"></div>
+              <div class="stat-number"><span class="metric-counter" data-target="550">550</span></div>
+              <div class="stat-label">Previously Seen</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section growth-stats fade-in" id="growth">
+          <div class="growth-header">
+            <span class="eyebrow">Live positions tracked</span>
+            <h2>Job Market Growth Across Sectors</h2>
+            <p>Real-time tracking of open positions scanned daily from 255+ companies.</p>
+          </div>
+
+          <div class="growth-wrapper">
+            <div class="positions-list">
+              <div class="position-item">
+                <div class="position-header">
+                  <div class="position-title">Product Manager</div>
+                  <div class="position-count">
+                    <span class="count-number" data-target="342">0</span>
+                    <span class="count-plus">+</span>
+                  </div>
+                </div>
+                <div class="position-bar">
+                  <div class="bar-fill" style="--width: 85%"></div>
+                </div>
+              </div>
+
+              <div class="position-item">
+                <div class="position-header">
+                  <div class="position-title">Software Engineer</div>
+                  <div class="position-count">
+                    <span class="count-number" data-target="612">0</span>
+                    <span class="count-plus">+</span>
+                  </div>
+                </div>
+                <div class="position-bar">
+                  <div class="bar-fill" style="--width: 92%"></div>
+                </div>
+              </div>
+
+              <div class="position-item">
+                <div class="position-header">
+                  <div class="position-title">Internship</div>
+                  <div class="position-count">
+                    <span class="count-number" data-target="189">0</span>
+                    <span class="count-plus">+</span>
+                  </div>
+                </div>
+                <div class="position-bar">
+                  <div class="bar-fill" style="--width: 68%"></div>
+                </div>
+              </div>
+
+              <div class="position-item">
+                <div class="position-header">
+                  <div class="position-title">Full Stack Engineer</div>
+                  <div class="position-count">
+                    <span class="count-number" data-target="478">0</span>
+                    <span class="count-plus">+</span>
+                  </div>
+                </div>
+                <div class="position-bar">
+                  <div class="bar-fill" style="--width: 88%"></div>
+                </div>
+              </div>
+
+              <div class="position-item">
+                <div class="position-header">
+                  <div class="position-title">Data Scientist</div>
+                  <div class="position-count">
+                    <span class="count-number" data-target="256">0</span>
+                    <span class="count-plus">+</span>
+                  </div>
+                </div>
+                <div class="position-bar">
+                  <div class="bar-fill" style="--width: 72%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="growth-stats-box">
+              <div class="stats-card">
+                <div class="stats-label">Total Open Positions</div>
+                <div class="stats-value">
+                  <span class="stats-number" data-target="2250">0</span>
+                  <span class="stats-plus">+</span>
+                </div>
+              </div>
+              <div class="stats-card">
+                <div class="stats-label">Listed Last 24h</div>
+                <div class="stats-value">
+                  <span class="stats-number" data-target="450">0</span>
+                  <span class="stats-plus">+</span>
+                </div>
+              </div>
+              <div class="stats-card">
+                <div class="stats-label">Companies Active</div>
+                <div class="stats-value">
+                  <span class="stats-number" data-target="320">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section feature-grid fade-in" id="features">
+          <div class="section-heading">
+            <span class="eyebrow">Core features</span>
+            <h2>Built for smart sourcing, engineered for speed.</h2>
+          </div>
+          <div class="grid-cards">
+            <article class="feature-card">
+              <h3>3-Layer Detection Engine</h3>
+              <p>Combine domain, page, and semantic analysis to surface hidden internship links.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Auto Career Page Discovery</h3>
+              <p>No manual URLs needed — NEXUS finds career pages across industries and companies.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Keyword Filtering System</h3>
+              <p>Custom role filters by title, level, department, and seniority signals.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Parallel Scanning Workers</h3>
+              <p>Run multiple crawlers at once so high-volume lists finish in minutes.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Structured JSON Output</h3>
+              <p>Export clean JSON payloads for automation, dashboards, or applicant pipelines.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Smart Role Prioritization</h3>
+              <p>Prioritize positions by industry, company growth stage, and relevant keywords.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section workflow fade-in" id="workflow">
+          <div class="section-heading">
+            <span class="eyebrow">How it works</span>
+            <h2>Three steps from company list to clean internship data.</h2>
+          </div>
+          <div class="workflow-line">
+            <div class="step-card">
+              <div class="step-icon">1</div>
+              <h3>Upload Company List</h3>
+              <p>Drop in CSV, JSON, or plain text lists of job sources and companies.</p>
+            </div>
+            <div class="connector"></div>
+            <div class="step-card">
+              <div class="step-icon">2</div>
+              <h3>Configure Filters</h3>
+              <p>Set role scopes, location preference, and job level tags.</p>
+            </div>
+            <div class="connector"></div>
+            <div class="step-card">
+              <div class="step-icon">3</div>
+              <h3>Launch Scan</h3>
+              <p>Watch NEXUS crawl, extract, and normalize career page data automatically.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section preview fade-in" id="preview">
+          <div class="preview-copy">
+            <span class="eyebrow">Live preview</span>
+            <h2>See the engine scan career pages in real-time.</h2>
+            <p>
+              A machine doing manual browsing work visually: loading pages, extracting
+              roles, and delivering clean results without developer noise.
+            </p>
+          </div>
+          <div class="preview-grid">
+            <div class="preview-status card">
+              <div class="preview-header">
+                <p class="caption">Realtime scan</p>
+                <span class="status-pill status-alt">Watching</span>
+              </div>
+              <div class="preview-flow">
+                <div class="flow-step active">
+                  <span></span>
+                  <div>
+                    <strong>Loading</strong>
+                    <p>Requesting career page data</p>
+                  </div>
+                </div>
+                <div class="flow-step">
+                  <span></span>
+                  <div>
+                    <strong>Extracting</strong>
+                    <p>Parsing internship content and role details</p>
+                  </div>
+                </div>
+                <div class="flow-step">
+                  <span></span>
+                  <div>
+                    <strong>Results</strong>
+                    <p>Normalizing output for pipelines and storage</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="preview-screenshot card">
+              <img src="images/Result_page.jpeg" alt="NEXUS results preview" />
+              <div class="preview-note">
+                <strong>Result snapshot</strong>
+                <span>23 job positions found across 15 companies.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section download fade-in" id="download">
+          <div class="download-card">
+            <div>
+              <span class="eyebrow">Latest release</span>
+              <h2>NEXUS Talent Radar v2.4.1</h2>
+              <p>Stable job scanning release with advanced role detection and faster export paths.</p>
+            </div>
+            <div class="download-meta">
+              <div class="meta-item">
+                <span>Platform</span>
+                <strong>Android</strong>
+              </div>
+              <div class="meta-item">
+                <span>Release</span>
+                <strong>2026-04-20</strong>
+              </div>
+            </div>
+            <div class="download-actions">
+              <a class="btn btn-primary" href="#" aria-label="Download latest version">Download</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section timeline fade-in" id="updates">
+          <div class="section-heading">
+            <span class="eyebrow">Announcements</span>
+            <h2>Recent updates and release notes.</h2>
+          </div>
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <span class="timeline-date">v2.4.1</span>
+              <div>
+                <h3>Role filtering expanded</h3>
+                <p>Added support for 50+ job categories and advanced seniority level tagging.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">v2.4.0</span>
+              <div>
+                <h3>Parallel worker engine</h3>
+                <p>Improved speed with concurrent career page scanning across all industries.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">v2.3.5</span>
+                <div>
+                  <h3>Structured JSON output</h3>
+                  <p>Export role data in a normalized schema for pipelines and dashboards.</p>
+                </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-brand">
+          <span class="mark">NEXUS</span>
+          <p>Job scanning platform for recruiters and talent teams.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#features">Features</a>
+          <a href="#workflow">Docs</a>
+          <a href="mailto:contact@nexus.dev">Contact</a>
+          <a href="#">License</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
