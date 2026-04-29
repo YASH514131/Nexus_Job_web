@@ -23,48 +23,47 @@ document.addEventListener('mousemove', (e) => {
 });
 
 // Animated counter for position counters (counts up once)
-function animateCounter(element, target, duration = 1800) {
+function animateCounter(element, target) {
   let current = 0;
-  const increment = target / (duration / 16);
-  
+  const step = target <= 300 ? 1 : 2;
+  const intervalMs = 500;
+
   const counter = setInterval(() => {
-    current += increment;
+    current += step;
     if (current >= target) {
       current = target;
       clearInterval(counter);
     }
     element.textContent = Math.floor(current).toLocaleString();
-  }, 16);
+  }, intervalMs);
 }
 
 // Looping counter for stats cards (continuous gradual increase)
-function animateLoopingCounter(element, target, duration = 600) {
+function animateLoopingCounter(element, target) {
   let current = target;
-  const smallIncrement = Math.ceil(target * 0.01); // Increase by 1% of initial target
-  
-  // Start from target
+  const step = 1;
+  const intervalMs = 1000;
+
   element.textContent = Math.floor(current).toLocaleString();
-  
-  // Gradually increase numbers one by one over time
+
   const loopCounter = setInterval(() => {
-    current += smallIncrement;
+    current += step;
     element.textContent = Math.floor(current).toLocaleString();
-  }, 100); // Update every 100ms for smooth, gradual animation
+  }, intervalMs);
 }
 
 // Decreasing counter for error metrics (continuous gradual decrease)
-function animateDecreasingCounter(element, target, duration = 600) {
+function animateDecreasingCounter(element, target) {
   let current = target;
-  const smallDecrement = Math.max(1, Math.ceil(target * 0.01)); // Decrease by 1% of initial target
-  
-  // Start from target
+  const step = 1;
+  const intervalMs = 1000;
+
   element.textContent = Math.floor(current).toLocaleString();
-  
-  // Gradually decrease numbers one by one over time
+
   const loopCounter = setInterval(() => {
-    current = Math.max(0, current - smallDecrement); // Don't go below 0
+    current = Math.max(0, current - step);
     element.textContent = Math.floor(current).toLocaleString();
-  }, 100); // Update every 100ms for smooth, gradual animation
+  }, intervalMs);
 }
 
 // Trigger counter animation when section is in view
